@@ -1,0 +1,44 @@
+@keyframes letter-size {
+    from {
+        letter-spacing: 0;
+        color: black;
+        text-shadow: 0px 0px 0px black;
+    }
+
+    to {
+        letter-spacing: 20px;
+        color: #520909;
+        text-shadow: 0px 10px 3px rgba(73, 13, 13, 0.409)
+    }
+}
+
+@font-face {
+    font-family: 'str';
+    src: url('fonts/str.ttf');
+}
+
+body {
+    background-color: black;
+    color: #520909;
+    font-weight: 800;
+    font-size: 50px;
+    font-family: str;
+    font-variant-caps: normal;
+    letter-spacing: 0px;
+    -webkit-animation-name: letter-size;
+    -webkit-animation-duration: 4s;
+    animation-name: letter-size;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    text-shadow: 0px 10px 3px rgba(73, 13, 13, 0.409);
+}
+
+
+#body-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    text-align: center;
+
+}
